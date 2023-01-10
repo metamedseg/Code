@@ -1,0 +1,19 @@
+{
+  "meta_weights_path": "experiments/exp40/meta_weights.pth",
+  "transfer_path": "pretrained_final.pth",
+  "targets": [
+    "heart"
+  ],
+  "report_path": "ft_results.csv",
+  "params": {
+    "epochs": 20,
+    "batch_size": 1,
+    "lr": 0.005,
+    "wd": 0.0003,
+    "ft_shots": 10,
+    "loss_type": "iou",
+    "scheduler": null,
+    "scheduler_params": null,
+    "norm_type": "instance"
+  }
+}

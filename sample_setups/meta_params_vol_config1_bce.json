@@ -1,0 +1,31 @@
+{
+  "description": "volume-based training, where each volume is a task consisting of ",
+  "exclude": ["heart", "prostate_peripheral_T2", "prostate_transitional_T2", "spleen", "colon"],
+  "params": {
+    "tasks_per_iteration": 8,
+    "num_shots": 15,
+    "outer_epochs": 100,
+    "inner_epochs": 20,
+    "inner_lr": 0.01,
+    "meta_lr": 0.01,
+    "inner_wd": 0.003,
+    "meta_wd": 0.001,
+    "inter_epoch_decay": false,
+    "meta_decay": false,
+    "val_shots": 5,
+    "batch_size": 1,
+    "loss_type": "bce_weighted",
+    "scheduler": "step",
+    "val_size": 0.1,
+    "weighted_update_type": null,
+    "scheduler_params": {
+      "step_size": 2,
+      "gamma": 0.8
+    },
+    "invert_weights": false,
+    "norm_type": "instance",
+    "volumetric": true,
+    "max_images": 20
+},
+  "weights_name": "weights_vol_config1_bce.pth"
+}

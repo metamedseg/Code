@@ -1,0 +1,21 @@
+{
+  "weights_path": null,
+  "targets": null,
+  "report_path": "vol_batch_ft_results.csv",
+  "params": {
+    "epochs": 20,
+    "batch_size": 1,
+    "ft_shots": 15,
+    "lr": 0.001,
+    "wd": 0.00003,
+    "loss_type": "iou",
+    "scheduler": null,
+    "scheduler_params": null,
+    "norm_type": "instance",
+    "volumetric": false,
+    "max_images": null,
+    "data_regime": "all"
+  },
+  "exp_type": "---",
+  "num_selections": 1
+}

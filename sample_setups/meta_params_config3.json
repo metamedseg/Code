@@ -1,0 +1,25 @@
+{
+  "exclude": ["heart", "prostate_peripheral_T2", "prostate_transitional_T2", "spleen", "colon"],
+  "params": {
+    "tasks_per_iteration": 8,
+    "num_shots": 10,
+    "outer_epochs": 200,
+    "inner_epochs": 5,
+    "inner_lr": 0.005,
+    "meta_lr": 0.01,
+    "inner_wd": 0.0005,
+    "meta_wd": 0.001,
+    "inter_epoch_decay": false,
+    "meta_decay": false,
+    "val_shots": 5,
+    "batch_size": 1,
+    "loss_type": "iou",
+    "scheduler": null,
+    "val_size": 0.1,
+    "weighted_update_type": null,
+    "scheduler_params": null,
+    "invert_weights": false,
+    "norm_type": "instance"
+},
+  "weights_name": "weights_config3.pth"
+}

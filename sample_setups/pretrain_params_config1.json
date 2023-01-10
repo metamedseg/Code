@@ -1,0 +1,22 @@
+{
+  "datasets": ["brain_edema_FLAIR",  "brain_edema_t1gd",  "brain_edema_T1w",
+    "brain_edema_T2w",  "brain_e_tumour_FLAIR", "brain_e_tumour_t1gd",
+    "brain_e_tumour_T1w", "brain_e_tumour_T2w", "brain_ne_tumour_FLAIR",
+    "brain_ne_tumour_t1gd", "brain_ne_tumour_T1w", "brain_ne_tumour_T2w",
+    "hippocampus_anterior", "hippocampus_posterior", "lung", "pancreas",
+    "pancreas_cancer", "vessel", "vessel_cancer"],
+  "weights_path": "pretrained_config1.pth",
+  "max_samples": null,
+  "params": {
+    "epochs": 20,
+    "batch_size": 1,
+    "lr": 0.01,
+    "wd": 0.00005,
+    "loss_type": "iou",
+    "scheduler": "exp",
+    "scheduler_params": {
+      "gamma": 0.8
+    },
+    "norm_type": "instance"
+  }
+}

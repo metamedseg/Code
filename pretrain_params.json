@@ -1,0 +1,18 @@
+{
+  "datasets": null,
+  "weights_path": "pretrained_final.pth",
+  "max_samples": null,
+  "params": {
+    "epochs": 20,
+    "batch_size": 1,
+    "lr": 0.01,
+    "wd": 0.00005,
+    "loss_type": "iou",
+    "scheduler": "exp",
+    "scheduler_params": {
+      "gamma": 0.8
+    },
+    "norm_type": "instance"
+  }
+}
+
